@@ -10,7 +10,9 @@
 
 html {
   font-size: 100%;
-} /*16px*/
+}
+
+/*16px*/
 
 :root {
   /* colors */
@@ -72,9 +74,11 @@ body {
   line-height: 1;
   color: var(--textColor);
 }
+
 p {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -121,6 +125,7 @@ small,
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -131,6 +136,7 @@ ul {
   display: block;
   object-fit: cover;
 }
+
 /* buttons */
 
 .btn {
@@ -146,18 +152,22 @@ ul {
   text-transform: capitalize;
   display: inline-block;
 }
+
 .btn:hover {
   background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
+
 .btn-hipster {
   color: var(--primary-500);
   background: var(--primary-200);
 }
+
 .btn-hipster:hover {
   color: var(--primary-200);
   background: var(--primary-700);
 }
+
 .btn-block {
   width: 100%;
 }
@@ -174,10 +184,12 @@ ul {
   color: var(--red-dark);
   background: var(--red-light);
 }
+
 .alert-success {
   color: var(--green-dark);
   background: var(--green-light);
 }
+
 /* form */
 
 .form {
@@ -189,6 +201,7 @@ ul {
   padding: 2rem 2.5rem;
   margin: 3rem auto;
 }
+
 .form-label {
   display: block;
   font-size: var(--small-text);
@@ -196,6 +209,7 @@ ul {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
+
 .form-input,
 .form-textarea {
   width: 100%;
@@ -212,15 +226,18 @@ ul {
 .form-textarea {
   height: 7rem;
 }
+
 ::placeholder {
   font-family: inherit;
   color: var(--grey-400);
 }
+
 .form-alert {
   color: var(--red-dark);
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
 }
+
 /* alert */
 
 @keyframes spinner {
@@ -252,6 +269,7 @@ ul {
   margin: 0 auto;
   margin-top: 1rem;
 }
+
 /* ============= PROJECT CSS =============== */
 
 .jobs-center {
@@ -276,10 +294,12 @@ ul {
   cursor: pointer;
   transition: var(--transition);
 }
+
 .job-btn:hover {
   color: var(--primary-500);
   box-shadow: 0 2px var(--primary-500);
 }
+
 .active-btn {
   color: var(--primary-500);
   box-shadow: 0 2px var(--primary-500);
@@ -294,6 +314,7 @@ ul {
   border-radius: var(--borderRadius);
   margin: 0.75rem 0;
 }
+
 .job-date {
   color: var(--grey-500);
   letter-spacing: var(--letterSpacing);
@@ -317,23 +338,27 @@ ul {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width:992px) {
   .jobs-center {
     width: 90vw;
     display: grid;
     grid-template-columns: 200px 1fr;
     column-gap: 4rem;
   }
+
   .btn-container {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .job-btn {
     margin-bottom: 1rem;
   }
+
   .job-btn:hover {
     box-shadow: -2px 0px var(--primary-500);
   }
+
   .active-btn {
     box-shadow: -2px 0px var(--primary-500);
   }
